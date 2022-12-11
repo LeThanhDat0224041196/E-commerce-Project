@@ -1,0 +1,77 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $pd-9 10% ;
+}
+.logo img{
+    max-width: $wthd-1;
+    height: auto;
+}
+.navMenu{
+    display: flex;
+}
+.navMenu a{
+    @include styleText ($fs-9,$fw-1,$color-dark-5);
+    padding: $pd-10 $pd-9;
+    transition: all .42 ease;
+}
+.navMenu a:hover{
+    @include Hover($color-red-1)
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: $mg-5;
+    @include styleText ($fs-10,$fw-1,$color-dark-5);
+    transition: all .42 ease;
+}
+.nav-icon i:hover{
+    @include Hover($color-red-1);
+    transform: scale(1.1);
+}
+#menu-icon{
+    font-size: 35px;
+    color: $color-dark-5;
+    cursor: pointer;
+    z-index: 501;
+}
+header.sticky{
+    background-color: $color-white-3;
+    padding: $pd-9 10%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+}
+
+@include responsive("Screen-890-down"){
+    header{
+        padding: $fs-7 4%;
+        transition: .4s;
+    }
+}
+
+@include responsive("Screen-750-down"){
+    .navMenu{
+        position: absolute;
+        top: $wthd-2;
+        right: -$wthd-2;
+        width: $wthd-6;
+        height: $height-3;
+        background: $color-white-5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .42s;
+        padding: $wthd-1 $fs-15;
+    }
+    .navMenu a{
+        display: block;
+        margin: $fs-19 0;
+    }
+}

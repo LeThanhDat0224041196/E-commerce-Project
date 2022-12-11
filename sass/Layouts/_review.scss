@@ -1,0 +1,29 @@
+.client-reviews{
+    background-color: $color-white-4;
+}
+.reviews{
+    text-align: center;
+}
+.reviews h3{
+    text-transform: capitalize;
+    align-items: center;
+    @include styleText($fs-10, $fw-4, $color-dark-8);
+}
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: $radius-1;
+    border: $pd-10 $mg-0;
+}
+.reviews p{
+    @include styleText($fs-9, $fw-1, $color-dark-10);
+    margin-top: $fs-10;
+    margin-bottom: $fs-10 ;
+    line-height: $height-2;
+}
+.reviews h2{
+    @include styleText($fs-21, $fw-1, $color-dark-6);
+    text-transform: capitalize;
+    margin-bottom: $bd-1;
+}
+

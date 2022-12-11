@@ -1,0 +1,55 @@
+.center-text h2{
+    @include style-Text($fs-16, $color-dark-8);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: $mg-1;
+}
+.center-text span{
+    color: $color-red-1;
+
+} 
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: $fs-17;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: $wthd-2 ;
+    height: auto;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: $fs-18;
+    left: $fs-18;
+    @include styleText($fs-14, $fw-2, $color-white-3);
+    text-transform: uppercase;
+    background-color: $color-green-1;
+    padding: $pd-12 $pd-10 ;
+    border: $bd-1;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: $fs-7;
+}
+.heart-icon:hover{
+    color: $color-red-1;
+}
+.rating i{
+    @include style-Text($fs-9, $color-yellow-2)
+}
+.price h4{
+    text-transform: capitalize;
+    @include styleText($fs-9, $fw-1, $color-dark-8);
+}
+.price p{
+    @include styleText($fs-1, $fw-3, $color-dark-9)
+}

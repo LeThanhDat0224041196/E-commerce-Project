@@ -1,0 +1,32 @@
+.up-center-text h2{
+    text-align: center;
+    text-transform: capitalize;
+    @include styleText($fs-10, $fw-4, $color-dark-8);
+    margin-bottom: $mg-1;
+}
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,auto));
+    gap: $fs-22;
+}
+.cart img{
+    width: $wthd-3;
+    height: auto;
+    border-radius: $radius-2 ;
+}
+.cart h5{
+    text-transform: capitalize;
+    @include styleText($fs-1, $fw-2, $color-dark-12);
+}
+.cart h4{
+    @include styleText($fs-19, $fw-3, $color-dark-8);
+}
+.cart p{
+    max-width: $wthd-3;
+    line-height: $mg-2;
+    @include style-Text($fs-23, $color-dark-10);
+    margin-bottom: $fs-14;
+}
+.cart h6{
+    @include styleText($fs-1, $fw-3, $color-dark-9);
+}

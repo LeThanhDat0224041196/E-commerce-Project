@@ -1,0 +1,36 @@
+.main-btn{
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all .42s ease;
+    color: $color-dark-8;
+    border: $bd-1 solid $color-dark-8;
+    padding: $pd-3 $pd-11 ;
+}
+.main-btn:hover{
+    @include styleButton-Hover($color-dark-6,$color-white-3)
+}
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    right: 3%;
+    top: 85%;
+}
+.down i{
+    @include style-Text($fs-15,$color-dark-5);
+    @include style-Button($pd-3, $pd-3, $bd-1 solid $color-dark-5, $radius-1);
+}
+.down i:hover{
+    background-color: $color-dark-5;
+    color: $color-white-3;
+    transition: all .42s ease;
+}
+
+@include responsive("Screen-630-down"){
+    .main-btn{
+        padding: $pd-10 $pd-9 ;
+        transition: .4s;
+    }
+}
